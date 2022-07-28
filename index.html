@@ -23,6 +23,7 @@
         <nav class="navbar navbar-expand-lg bg-white">
             <div class="container-fluid">
                 <a class="navbar-brand fw-bold" href="#">E-School</a>
+                <button class="btn btn-outline-primary d-md-block d-lg-none ms-auto d-none me-3" type="submit">Register</button>
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
         <span class="navbar-toggler-icon"></span>
       </button>
@@ -195,7 +196,8 @@
                     </div>
                 </div>
             </div>
-            <button type="button" class="btn btn-primary d-block mx-auto mt-4">See More Courses</button>
+            <button type="button" class="btn btn-primary d-lg-block d-md-none d-none mx-auto mt-4">See More Courses</button>
+            <button type="button" class="btn btn-primary d-block mx-auto mt-4 d-lg-none d-md-block d-block">View All</button>
         </section>
 
         <!-- ------------------course-part-end------------------------ -->
@@ -240,38 +242,43 @@
         <section class="container mt-5 bg-primary">
 
             <div class="row p-5">
-                <div class="col-lg-10 col-md-8 text-white p-2">
+
+
+                <div class="col-lg-10 col-md-12 text-white p-2">
                     <p>Ready to join?</p>
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
                 </div>
-                <div class="col-lg-2 col-md-4 mt-4">
+
+
+                <div class="col-lg-2 col-md-12 mt-4">
                     <!-- ------------modal-part-start------------ -->
                     <button type="button" class="btn btn-primary bg-white text-primary ps-3 pe-3 fw-semibold" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Register Now</button>
+                </div>
 
-                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-                        <div class="modal-dialog">
-                            <div class="modal-content">
-                                <div class="modal-body">
-                                    <form>
+                <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-body">
+                                <form>
 
-                                        <h1 class="text-center"> Sing up</h1>
-                                        <div class="form-floating mb-3">
-                                            <input type="email" class="form-control w-50 mx-auto d-block" id="floatingInput" placeholder="name@example.com">
-                                            <label for="floatingInput">Email</label>
-                                        </div>
-                                        <div class="form-floating mb-3">
-                                            <input type="password" class="form-control w-50 mx-auto d-block" id="floatingPassword" placeholder="Password">
-                                            <label for="floatingPassword">Password</label>
-                                        </div>
-                                        <button type="button" class="btn btn-primary bg-white text-primary ps-3 pe-3 fw-semibold mx-auto d-block ps-3 pe-3">Sing Up</button>
+                                    <h1 class="text-center"> Sing up</h1>
+                                    <div class="form-floating mb-3">
+                                        <input type="email" class="form-control w-50 mx-auto d-block" id="floatingInput" placeholder="name@example.com">
+                                        <label for="floatingInput">Email</label>
+                                    </div>
+                                    <div class="form-floating mb-3">
+                                        <input type="password" class="form-control w-50 mx-auto d-block" id="floatingPassword" placeholder="Password">
+                                        <label for="floatingPassword">Password</label>
+                                    </div>
+                                    <button type="button" class="btn btn-primary bg-white text-primary ps-3 pe-3 fw-semibold mx-auto d-block ps-3 pe-3">Sing Up</button>
 
-                                    </form>
-                                </div>
-
+                                </form>
                             </div>
+
                         </div>
                     </div>
                 </div>
+            </div>
 
             </div>
 
