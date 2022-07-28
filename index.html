@@ -12,7 +12,8 @@
 
 <style>
     .imagesize {
-        filter: brightness(50%)
+        filter: brightness(50%);
+        height: 500px;
     }
 </style>
 
@@ -60,7 +61,7 @@
 
                     <div class="carousel-item active">
                         <div>
-                            <img src="images/cover/cover-1.png" class="d-block w-100 imagesize" style="height:500px" alt="...">
+                            <img src="images/cover/cover-1.png" class="d-block w-100 imagesize" alt="...">
                             <div class="carousel-caption  d-flex flex-column justify-content-center align-items-center h-100 ">
                                 <h1 class="fw-bold">Digital Learning Platform</h1>
                                 <p>It is a long established fact that a reader will be distracted by the readable<br> content of a page when looking at its layout.</p>
@@ -182,12 +183,37 @@
         <section class="container mt-5 bg-primary">
 
             <div class="row p-5">
-                <div class="col-sm-10 text-white p-2">
+                <div class="col-lg-10 col-md-8 text-white p-2">
                     <p>Ready to join?</p>
                     <p>It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout</p>
                 </div>
-                <div class="col-sm-2 mt-4">
-                    <a href="modal.html"> <button type="button" class="btn btn-primary bg-white text-primary ps-3 pe-3 fw-semibold ">Register Now</button></a>
+                <div class="col-lg-2 col-md-4 mt-4">
+                    <button type="button" class="btn btn-primary bg-white text-primary ps-3 pe-3 fw-semibold" data-bs-toggle="modal" data-bs-target="#exampleModal" data-bs-whatever="@mdo">Register Now</button>
+
+                    <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                        <div class="modal-dialog">
+                            <div class="modal-content">
+                                <div class="modal-body">
+                                    <form>
+
+                                        <h1 class="text-center"> Sing up</h1>
+                                        <div class="form-floating mb-3">
+                                            <input type="email" class="form-control w-50 mx-auto d-block" id="floatingInput" placeholder="name@example.com">
+                                            <label for="floatingInput">Email address</label>
+                                        </div>
+                                        <div class="form-floating mb-3">
+                                            <input type="password" class="form-control w-50 mx-auto d-block" id="floatingPassword" placeholder="Password">
+                                            <label for="floatingPassword">Password</label>
+                                        </div>
+                                        <button type="button" class="btn btn-primary bg-white text-primary ps-3 pe-3 fw-semibold mx-auto d-block ps-3 pe-3">Sing Up</button>
+
+                                    </form>
+                                </div>
+
+                            </div>
+                        </div>
+                    </div>
+                    <!-- <button type="button" class="btn btn-primary bg-white text-primary ps-3 pe-3 fw-semibold ">Register Now</button></a> -->
                 </div>
 
         </section>
